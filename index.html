@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using svg-sprite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="main">
+    <section class="how-it-works">
+      <h1 class="visually-hidden">Svg Спрайты</h1>
+      <div class="container how-it-works__container">
+        <h2 class="how-it-works__title title-common title-reset">Как это работает?</h2>
+        <ul class="how-it-works__list list-reset">
+          <li class="how-it-works__card works-item">
+            <svg class="works-item__svg" viewbox="0 0 375 288">
+              <use xlink:href="sprite.svg#coffee"></use>
+              <!-- <use xlink:href="http://deep.tmweb.ru/sprite.svg#coffee"></use> -->
+            </svg>
+            <h3 class="works-item__title subtitle-common title-reset">
+              Утренний <span class="colored-text">кофе</span>
+            </h3>
+            <p class="text-common">
+              Кофеин воздействует на центральную нервную систему как природный “будильник”. Поэтому мы быстрее просыпаемся.
+            </p>
+          </li>
+
+          <li class="how-it-works__card">
+            <svg class="works-item__svg" viewbox="0 0 375 288">
+              <use xlink:href="sprite.svg#meditation"></use>
+            </svg>
+            <h3 class="works-item__title subtitle-common title-reset">
+              Час <span class="colored-text">медитации</span>
+            </h3>
+            <p class="text-common">
+              После практик оба полушария мозга начинают работать сбалансированно — это привносит порядок в вашу жизнь.
+            </p>
+          </li>
+
+          <li class="how-it-works__card">
+            <svg class="works-item__svg" viewbox="0 0 375 288">
+              <use xlink:href="sprite.svg#sprint"></use>
+            </svg>
+            <h3 class="works-item__title subtitle-common title-reset">
+              Вперёд к <span class="colored-text">свершениям!</span>
+            </h3>
+            <p class="text-common">
+              Ресурсы каждого человека ограничены, поэтому нам необходимо беречь себя и вовремя останавливаться.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="integration">
+      <div class="integration__block integration__descr">
+        <h2 class="integration__title title-common title-reset">
+          Интеграция со сторонними сервисами
+        </h2>
+        <p class="integration__text text-common">
+          Поможет всегда оставаться в курсе всех событий, быть максимально эффективным на протяжении всего рабочего дня, контролировать свои задачи и не опоздать на запланированные встречи.
+        </p>
+      </div>
+
+      <div class="integration__block integration__links">
+        <ul class="social list-reset">
+          <li class="social__item link-item">
+            <a class="social__link social__link--fb  common-link" href="#">
+              <svg class="link-item__svg" viewbox="0 0 70 70">
+                <use xlink:href="sprite.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item link-item">
+            <a class="social__link social__link--sub common-link" href="#">
+              <svg class="link-item__svg" viewbox="0 0 70 70">
+                <use xlink:href="sprite.svg#sub"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item link-item">
+            <a class="social__link social__link--worklio common-link" href="#">
+              <svg class="link-item__svg" viewbox="0 0 70 70">
+                <use xlink:href="sprite.svg#worklio"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item link-item">
+            <a class="social__link social__link--dropbox common-link" href="#">
+              <svg class="link-item__svg" viewbox="0 0 70 70">
+                <use xlink:href="sprite.svg#dropbox"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item link-item">
+            <a class="social__link social__link--google common-link" href="#">
+              <svg class="link-item__svg" viewbox="0 0 70 70">
+                <use xlink:href="sprite.svg#google"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item link-item">
+            <a class="social__link social__link--trello common-link" href="#">
+              <svg class="link-item__svg" viewbox="0 0 70 70">
+                <use xlink:href="sprite.svg#trello"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item link-item">
+            <a class="social__link social__link--slack common-link" href="#">
+              <svg class="link-item__svg" viewbox="0 0 70 70">
+                <use xlink:href="sprite.svg#slack"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <svg class="integration__background" viewbox="0 0 550 275">
+          <use xlink:href="sprite.svg#ellipse"></use>
+        </svg>
+      </div>
+
+    </section>
+
+  </main>
+</body>
+</html>
